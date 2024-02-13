@@ -1,0 +1,63 @@
+.text {
+  color: #777;
+  }
+.btn {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #000309;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.delete-button {
+  background-color:hsl(45, 100%, 64%);
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* forms*/
+.form {
+  width: 50%; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+.form h1 {
+  font-weight: bold; 
+  font-size: 24px;
+  color: hsl(45, 100%, 64%);
+}
+.form label {
+  display: block; 
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form textarea,
+.form input[type="number"] {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+.form button[type="submit"] {
+  background-color: hsl(45, 100%, 64%); 
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.form button[type="submit"]:hover {
+  background-color: hsl(45, 78%, 51%); 
+}
+.form input[type="text"],
+.form textarea,
+.form input[type="number"] {
+  border: 1px solid #ccc; 
+}

@@ -2,32 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Body */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white; 
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40;
+  line-height: 1.6;
+  margin: 0; 
+  padding: 0; 
+}
+/* Nav */
+nav {
+  background-color: hsl(45, 100%, 64%);
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+  border-top: hsl(45, 100%, 64%);
+  margin: 0; 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  color: #fff7f7;
+  text-decoration: none;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+nav a {
+  margin-left: 12px;
+}
+nav a:hover {
+  background-color: #000611;
+}
+/* footer */
+.footer {
+
+  color: #0b0000;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer .container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer p {
+  font-size: 0.875rem;
+}
+/* 404 */
+.not-found {
+  text-align: center;
+}
+.not-found a{
+  color: #0e30c8;
+  text-decoration: underline;
+}
+.title-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin:0;
+}
+.container {
+  padding: 20px;
+}
+
+.homepics {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.homepics img {
+  width: 200px;
+  height: 150px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.homepics img:hover {
+  transform: scale(1.1); 
+}
+
+.title {
+  color: #333;
+  padding-bottom: 20px;
+  text-align: center;
 }
